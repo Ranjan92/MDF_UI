@@ -1,0 +1,18 @@
+.navbar{
+    justify-content: space-between;
+    color: white;
+    background-color: #0a69c9;
+    border: black 0.5px solid;
+    font: bold;
+}
+
+.header{
+    padding-left: 500px;
+    font-size: x-large;
+}
+span{
+    padding-left: 50px;
+}
+a{
+    color: white;
+}

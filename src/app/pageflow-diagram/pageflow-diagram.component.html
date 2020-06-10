@@ -1,0 +1,34 @@
+<div id="sample">
+    <div style="width: 100%; display: flex; justify-content: space-between">
+      <div id="myPaletteDiv" style="width: 100px; margin-right: 2px; background-color: whitesmoke; border: solid 1px black"></div>
+      <div id="myDiagramDiv" style="flex-grow: 1; height: 420px; border: solid 1px black"></div>
+      <div id="myInspector"></div>
+    </div>
+    
+      
+    <!--Job Name: <input type="text" [(ngModel)]="jobName" placeholder="Please enter Job Name">
+    Team Name: <input type="text" [(ngModel)]="teamName" placeholder="Please enter Team Name">
+    Job Type: <input type="text" [(ngModel)]="jobType" placeholder="Please enter Job Type">-->
+    <div class="row"  *ngIf="showSuccessMsg" style="color: green;">
+      <div class="col-xs-12">
+        <p class="alert alert-success">
+            <strong>{{jobExecutionStatus}}</strong>
+        </p>
+      </div>
+    </div>
+    <div class="row"  *ngIf="showErrorMsg" style="color: red;">
+      <div class="col-xs-12">
+        <p class="alert alert-success">
+            <strong>{{jobExecutionStatus}}</strong>
+        </p>
+      </div>
+    </div><br>
+    <button id="SaveButton" (click)="save()" >Save</button>
+    <button (click)="load()">Load</button>
+    
+    <!--<button onclick="layout()">Layout</button>-->
+    Diagram Model saved in JSON format:
+    <br>
+    <textarea [innerHTML]="mySavedModel"  style="width:100%;height:100px" id="jsonId">
+    </textarea>
+  </div>

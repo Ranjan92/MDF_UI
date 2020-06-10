@@ -1,0 +1,22 @@
+<div id="container">
+    
+    <table>
+        <th>Enter Details for New Job</th>
+        <tr>
+           <td><strong>Job Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" [(ngModel)]="jobName"><br></strong>
+           </td>
+        </tr>
+        <tr>
+            <td><strong>Team Name &nbsp;&nbsp;&nbsp;</strong><input type="text" [(ngModel)]="teamName"></td>
+        </tr>
+        <tr>
+            <td><strong>Job Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><input type="text" [(ngModel)]="jobType"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Submit" (click)="etlJobExecution()" ></td>
+        </tr>
+    </table>
+
+</div>
